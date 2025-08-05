@@ -21,12 +21,12 @@ app.get('/api/generateImage', async (req, res) => {
   }
 });
 
-if (process.env.NODE_ENV !== 'production') {
-  const PORT = 5000;
-  app.listen(PORT, () => {
-    console.log(`Server running on http://localhost:${PORT}`);
-  });
-}
+const PORT = 5000;
+app.listen(PORT, () => {
+  console.log(`Server running on http://localhost:${PORT}`);
+});
+// if (process.env.NODE_ENV !== 'production') {
+// }
 
-module.exports = app; 
-module.exports.handler = serverless(app);
+// module.exports = app; 
+// module.exports.handler = serverless(app);
