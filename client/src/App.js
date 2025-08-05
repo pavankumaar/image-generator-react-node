@@ -16,7 +16,7 @@ function App() {
   const fetchImage = async() => {
     try {
       setIsLoading(true);
-      const res = await fetch('http://localhost:5000/api/generateImage');
+      const res = await fetch('/api/generateImage');
       const blob = await res.blob();
       const imageObjectURL = URL.createObjectURL(blob);
       setImageUrl(imageObjectURL);
