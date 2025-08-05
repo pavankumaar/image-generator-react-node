@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import "./App.css";
 import InputPrompt from "./components/InputPrompt/InputPrompt";
 import MainContent from "./components/MainContent/MainContent";

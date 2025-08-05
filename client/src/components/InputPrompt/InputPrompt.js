@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "./InputPrompt.css";
 import { IoSend } from "react-icons/io5";
 
