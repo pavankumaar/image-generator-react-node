@@ -16,7 +16,8 @@ function App() {
   const fetchImage = async() => {
     try {
       setIsLoading(true);
-      const res = await fetch('/api/generateImage');
+      //server is hosted there
+      const res = await fetch('https://image-generator-react-node-1.onrender.com/api/generateImage');
       const blob = await res.blob();
       const imageObjectURL = URL.createObjectURL(blob);
       setImageUrl(imageObjectURL);
