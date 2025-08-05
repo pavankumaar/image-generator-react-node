@@ -45,3 +45,10 @@
     transform: rotate(360deg);
   }
 }
+
+@media only screen and (max-width: 600px) {
+  .inputprompt-container {
+    width: 100%;
+    margin: 20px;
+  }
+}

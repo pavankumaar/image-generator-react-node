@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./App.css";
 import InputPrompt from "./components/InputPrompt/InputPrompt";
 import MainContent from "./components/MainContent/MainContent";
+import Header from "./components/Header/Header";
 
 function App() {
   const [prompt, setPrompt] = useState("");
@@ -29,6 +30,7 @@ function App() {
 
   return (
     <div className="App">
+      <Header />
       <MainContent imageUrl={imageurl} isLoading={isLoading}/>
       <InputPrompt prompt={prompt} setPrompt={setPrompt} handleInputChange={handleInputChange} fetchImage={fetchImage} isLoading={isLoading}/>
     </div>

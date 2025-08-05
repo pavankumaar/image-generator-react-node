@@ -34,3 +34,10 @@
     background-position: 800px 0;
   }
 }
+
+@media only screen and (max-width: 600px) {
+  .main-content{
+    width: 100%;
+    margin: 20px;
+  }
+}
