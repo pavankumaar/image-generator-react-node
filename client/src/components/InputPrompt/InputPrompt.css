@@ -1,0 +1,47 @@
+.inputprompt-container {
+    display: flex;
+    width: 600px;
+    margin: auto;
+    border-radius: 30px;
+    border: 1px solid transparent;
+    height: 45px;
+    align-items: center;
+    background-color: rgb(236, 236, 236);
+}
+
+.inputprompt-container input {
+    width: 100%;
+    height: 43px;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    font-size: 15px;
+    padding-left: 20px;
+    background-color: inherit;
+}
+
+.inputprompt-container:has(input:focus) {
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.send-button {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    cursor: pointer;
+    margin-right: 10px;
+}
+.spinner {
+  width: 16px;
+  height: 16px;
+  border: 2px solid #ccc;
+  border-top: 2px solid #333;
+  border-radius: 50%;
+  animation: spin 0.6s linear infinite;
+  display: inline-block;
+}
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
